@@ -26,11 +26,6 @@ data State
     }
     deriving (Show)
 
--- stormGen :: String -> [Tweet]
--- -- Here I can use Data.List.Split's chunksOf function to generate
--- -- chunks of the right size, but I need a way to get the right size.
--- stormGen s = makeNextTweet 1 s []
---   where makeNextTweet
 
 step :: State -> String -> State
 step state str =
